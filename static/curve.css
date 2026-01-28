@@ -1,0 +1,8 @@
+.top-curve {
+  background-color: #f6f3fc;
+  border-radius: 0 0 60% 60% / 60%;
+}
+
+.top-curve :first-child {
+  margin-top: 0;
+}
