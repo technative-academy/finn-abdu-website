@@ -1,7 +1,16 @@
 .hook {
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
   background-color: #f6f3fc;
   padding: 5%;
+}
+
+.hook :first-child {
+  display: inherit;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 30rem;
 }
 
 .hook-img {
