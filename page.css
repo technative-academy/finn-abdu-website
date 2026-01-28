@@ -1,0 +1,16 @@
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+.background {
+  background-color: #fbfafe;
+}
+
+.top-curve {
+  background-color: #f6f3fc;
+  border-radius: 0 0 60% 60% / 10%;
+}
