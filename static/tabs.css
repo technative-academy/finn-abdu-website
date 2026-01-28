@@ -4,9 +4,33 @@
   padding: 5%;
 }
 
-.tab-buttons {
+.tab-button-container {
   gap: 10px;
   padding: 10px;
+  list-style: none;
+}
+
+.tab-button-container ul {
+  list-style: none;
+}
+
+.tab-button {
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 0.5rem;
+  font-size: large;
+}
+
+.tab-button:hover {
+  background-color: #f0ebfa;
+}
+
+.tab-button-active {
+  border-left: 0.5rem solid #794cff;
+  background-color: #f0ebfa;
 }
 
 .tabs img {

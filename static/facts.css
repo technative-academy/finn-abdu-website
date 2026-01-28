@@ -1,0 +1,22 @@
+.facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  li {
+    display: flex;
+    background-color: #f0ebfa;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    width: 20rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+  }
+}
