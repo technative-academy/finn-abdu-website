@@ -1,0 +1,22 @@
+footer {
+  background-color: #1d2830;
+  color: white;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  border-bottom: 1px solid #444;
+}
+
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}

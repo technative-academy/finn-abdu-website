@@ -1,0 +1,14 @@
+.tabs {
+  background-color: #f6f3fc;
+  display: flex;
+  padding: 5%;
+}
+
+.tab-buttons {
+  gap: 10px;
+  padding: 10px;
+}
+
+.tabs img {
+  margin-right: auto;
+}
