@@ -115,3 +115,50 @@ reviewTabButtons.forEach(addReviewTabButtonEvent);
 
 // highlight same for horizontal review carousel
 reviewTabButtons[0].click();
+
+// --------------------------------------------------------------
+// for the search functionality
+
+const searchBtn = document.querySelector(".search-btn");
+searchBtn.addEventListener("click", addSearchFunctionality);
+
+function addSearchFunctionality(event) {
+  const searchInput = document.querySelector(".search-input");
+  const query = searchInput.value.trim().toLowerCase();
+
+  if (query === "") {
+    alert("Please enter a search term.");
+    return;
+  }
+
+  const productsRes = document.querySelector(".products-grid");
+  // Clear previous results
+  productsRes.innerHTML = "";
+
+  // get queried results
+  const results = products.filter((product) =>
+    product.name.toLowerCase().includes(query),
+  );
+
+  if (results.length === 0) {
+    productsRes.innerHTML = "<p>No products found.</p>";
+    return;
+  }
+
+  // Display results
+  results.forEach((product) => {
+    const productDiv = document.createElement("div");
+    productDiv.classList.add("placeholder-div");
+
+    const title = document.createElement("h4");
+    title.textContent = product.name;
+
+    const image = document.createElement("img");
+    image.src = product.image;
+    image.alt = product.name;
+
+    productDiv.appendChild(image);
+    productDiv.appendChild(title);
+    productsRes.appendChild(productDiv);
+  });
+}
