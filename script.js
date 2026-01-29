@@ -1,3 +1,30 @@
+let productMap = new Map();
+
+productMap.set("figurine", [
+  {
+    name: "Naruto Nendoroid",
+    src: "icons/naruto_nendoroid.jpg",
+  },
+  { name: "Raiden Ei Nendoroid", src: "images/raiden-ei-nendoroid.webp" },
+  { name: "Hatsune Miku Nendoroid", src: "images/hatsune-miko-nendoroid.png" },
+  { name: "Nichijou Figurine", src: "icons/nichijou_figurine.jpg" },
+  {
+    name: "Gachiakuta Rudo Prize Figure",
+    src: "images/gachiakuta-rudo-vibration-stars-prize-figure_1.webp",
+  },
+]);
+
+productMap.set("t-shirt", [
+  {
+    name: "Kawaii Manga Anime T-Shirt",
+    src: "images/cute-kawaii-manga-anime-merch-eat.jpg",
+  },
+]);
+
+productMap.set("poster", [
+  { name: "One Piece Poster", src: "images/one-piece-poster.webp" },
+]);
+
 function addTabButtonEvent(tabButton) {
   tabButton.addEventListener("click", tabButtonClick);
 }
