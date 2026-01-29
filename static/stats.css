@@ -39,3 +39,11 @@
   font-size: xxx-large;
   padding: 5rem;
 }
+
+.review-content.active-statistic {
+  display: block;
+}
+
+.review-content {
+  display: none;
+}
