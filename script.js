@@ -1,7 +1,3 @@
-// products showcase tab buttons functionality
-const tabButtons = document.querySelectorAll(".tab-button");
-tabButtons.forEach(addTabButtonEvent);
-
 function addTabButtonEvent(tabButton) {
   tabButton.addEventListener("click", tabButtonClick);
 }
@@ -84,3 +80,8 @@ function updateReviewTabClicked(reviewTabButton) {
 function removeActiveReviewTab(reviewTab) {
   reviewTab.classList.remove("active-statistic");
 }
+const tabButtons = document.querySelectorAll(".tab-button");
+tabButtons.forEach(addTabButtonEvent);
+
+// highlight the first button on the carousel by default
+tabButtons[0].click();
