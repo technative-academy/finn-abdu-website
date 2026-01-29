@@ -25,7 +25,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: 10px 5px 5px grey;
-    border-radius: 7.5rem;
+    background-color: lightgray;
+    border-radius: 1.5rem;
     img {
       height: 30rem;
       border-radius: 10rem;
