@@ -38,9 +38,6 @@ function removeActiveTabImage(tabImage) {
 // --------------------------------------------------------------
 // for the review statistics section
 // review tab buttons functionality
-const reviewTabButtons = document.querySelectorAll(".stats-button");
-reviewTabButtons.forEach(addReviewTabButtonEvent);
-reviewTabButtons[0].click();
 
 function addReviewTabButtonEvent(reviewTabButton) {
   reviewTabButton.addEventListener("click", reviewTabButtonClick);
@@ -85,3 +82,9 @@ tabButtons.forEach(addTabButtonEvent);
 
 // highlight the first button on the carousel by default
 tabButtons[0].click();
+
+const reviewTabButtons = document.querySelectorAll(".stats-button");
+reviewTabButtons.forEach(addReviewTabButtonEvent);
+
+// highlight same for horizontal review carousel
+reviewTabButtons[0].click();
