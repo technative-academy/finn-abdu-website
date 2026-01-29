@@ -36,3 +36,11 @@
 .tabs img {
   margin-right: auto;
 }
+
+.image-content.active-tab-image {
+  display: block;
+}
+
+.image-content {
+  display: none;
+}
