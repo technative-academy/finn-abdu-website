@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/stylesheet.css" />
+    <script>
+      function randomNum() {
+        return Math.random() * (0 - 100) + 100;
+      }
+    </script>
     <title>Anime Website</title>
   </head>
   <body>
     <div class="top-curve">
-      <img src="icons/logo.png" width="100px" alt="logo placeholder" />
+      <img src="icons/logo.png" width="20%" alt="logo placeholder" />
       <nav>
         <ul>
           <li><a style="color: #796eff" href="#">Home</a></li>
@@ -17,17 +22,39 @@
         </ul>
       </nav>
       <header>
-        <h1>Anime or something idk</h1>
-        <img src="" alt="" />
+        <h1>The Fanime Shop&trade;</h1>
+        <img
+          class="showcase_img"
+          width="70%"
+          height="70%"
+          src="icons/nichijou_figurine.jpg"
+          alt="nichijou figurine"
+        />
       </header>
       <div class="companies">
         <label for="companies">Trusted by these companies:</label>
         <ul>
-          <li><img width="100px" src="icons/goodsmilecompany.png" alt="" /></li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>
+            <img
+              width="100em"
+              src="icons/goodsmilecompany.png"
+              alt="good smile company logo"
+            />
+          </li>
+          <li><img src="icons/mappa.png" width="100em" alt="mappa logo" /></li>
+          <li>
+            <img
+              src="icons/davidproduction.png"
+              width="100em"
+              alt="davidproduction logo"
+            />
+          </li>
+          <li>
+            <img src="icons/trigger.png" width="100em" alt="trigger logo" />
+          </li>
+          <li>
+            <img src="icons/ufotable.svg" width="100em" alt="ufotable logo" />
+          </li>
         </ul>
       </div>
     </div>
@@ -72,10 +99,24 @@
         </ul>
       </div>
       <div class="hook">
-        <h2>sumn important</h2>
-        <p>bla bla bla</p>
-        <a href="">click me!</a>
-        <img src="" alt="hook img" />
+        <div>
+          <h2>Free Giveaways</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            placeat maiores, inventore nostrum numquam error doloremque libero
+            possimus? Earum amet neque quasi fuga magnam, reprehenderit nam
+            tempore rerum quis natus? Ab laborum commodi dolorem nam quibusdam
+            aspernatur delectus dolor. Sequi.
+          </p>
+          <button class="button"><p>Read more</p></button>
+        </div>
+        <img
+          class="showcase_img"
+          src="icons/naruto_nendoroid.jpg"
+          width="40%"
+          height="40%"
+          alt="naruto nendoroid"
+        />
       </div>
       <div class="stats">
         <h2>Our esteemed reviews</h2>
@@ -86,6 +127,11 @@
           ><button class="stats-button"><p>Amazon Review</p></button>
         </ul>
         <h3 class="statistic">99% of statistics trust statistics too much</h3>
+        <script>
+          document.querySelector(".statistic").innerHTML =
+            randomNum().toFixed(2) +
+            "% of statistics trust statistics too much";
+        </script>
       </div>
     </main>
     <footer class="footer">
@@ -107,9 +153,9 @@
         <div class="footer-socials">
           <ul>
             <li><img src="icons/instagram.png" /></li>
-            <li><img src="icons/twitter.png" alt="placeholder" /></li>
-            <li><img src="icons/web.png" alt="placeholder" /></li>
-            <li><img src="icons/facebook.png" alt="placeholder" /></li>
+            <li><img src="icons/twitter.png" /></li>
+            <li><img src="icons/web.png" /></li>
+            <li><img src="icons/facebook.png" /></li>
           </ul>
         </div>
       </div>

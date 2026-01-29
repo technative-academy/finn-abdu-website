@@ -15,3 +15,20 @@ main {
 .background {
   background-color: #fbfafe;
 }
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-color: #796eff;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  p {
+    font-size: medium;
+    color: white;
+  }
+}
+
+.button:hover {
+  background-color: #564cc2;
+}
