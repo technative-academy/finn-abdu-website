@@ -53,3 +53,9 @@
   height: 50rem;
   width: auto;
 }
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
