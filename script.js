@@ -1,6 +1,3 @@
-const tabButtons = document.querySelectorAll(".tab-button");
-tabButtons.forEach(addTabButtonEvent);
-
 function addTabButtonEvent(tabButton) {
   tabButton.addEventListener("click", tabButtonClick);
 }
@@ -37,3 +34,9 @@ function updateTabClicked(tabButton) {
 function removeActiveTabImage(tabImage) {
   tabImage.classList.remove("active-tab-image");
 }
+
+const tabButtons = document.querySelectorAll(".tab-button");
+tabButtons.forEach(addTabButtonEvent);
+
+// highlight the first button on the carousel by default
+tabButtons[0].click();
