@@ -8,49 +8,89 @@
   </head>
   <body>
     <div class="top-curve">
+      <img src="icons/logo.png" width="20%" alt="logo placeholder" />
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>About</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a style="color: #796eff" href="#">About</a></li>
         </ul>
       </nav>
       <header>
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>Tagline here</p>
+        <h1>About us</h1>
+        <p>We're the best thing since Evangelion.</p>
       </header>
     </div>
     <main>
-      <div>
-        <h3>info bla bla bla</h3>
-        <p>p1</p>
-        <p>p2</p>
-        <img src="" alt="img place holder" />
+      <div class="tabs">
+        <div class="about-us-container">
+          <h3>info bla bla bla</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            non at, excepturi libero iure expedita. Sequi aliquid consequatur
+            distinctio excepturi officiis odio est eveniet ad in beatae
+            consequuntur sint dicta ipsam minima sed aspernatur, dolore iste
+            quibusdam. Minima, possimus et nobis necessitatibus illum placeat
+            consectetur maiores voluptatum? Laudantium, voluptate labore?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis iste, laudantium eveniet quaerat porro tempore nesciunt
+            culpa placeat, nemo asperiores sequi reprehenderit eaque pariatur
+            nostrum tenetur nihil commodi modi eos accusamus labore aperiam
+            consectetur qui! Ipsum, commodi. Autem expedita quibusdam voluptate
+            a eaque consequatur repudiandae. Reprehenderit vero laudantium
+            nesciunt. Distinctio?
+          </p>
+        </div>
+        <img
+          class="showcase-img"
+          src="images/gachiakuta-rudo-vibration-stars-prize-figure_1.webp"
+          height="700rem"
+        />
       </div>
-      <div>
-        <iframe
-          width="425"
-          height="350"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.215269453083935%2C50.802680176197214%2C-0.08360517696088811%2C50.837383695364544&amp;layer=mapnik"
-          style="border: 1px solid black"
-        ></iframe
-        ><br /><small
-          ><a href="https://www.openstreetmap.org/?#map=13/50.82004/-0.14944"
-            >View Larger Map</a
-          ></small
-        >
+      <div class="form">
+        <div>
+          <iframe
+            width="425"
+            height="350"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.215269453083935%2C50.802680176197214%2C-0.08360517696088811%2C50.837383695364544&amp;layer=mapnik"
+            style="border: 1px solid black"
+          ></iframe
+          ><br /><small
+            ><a href="https://www.openstreetmap.org/?#map=13/50.82004/-0.14944"
+              >View Larger Map</a
+            ></small
+          >
+        </div>
         <form>
-          <h3>Contact Us</h3>
+          <h2>Contact Us</h2>
           <p>Email us on bla@email.com or enter your message below</p>
           <label for="name">Name:</label><br />
-          <input type="text" id="name" name="name" /><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Your name:"
+            name="name"
+          /><br />
           <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="name@example.com"
+            name="email"
+          /><br />
           <label for="message">Message:</label><br />
-          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            rows="4"
+            cols="50"
+          ></textarea
           ><br />
+          <button class="button" type="submit"><p>Submit</p></button>
         </form>
-        <button type="submit">Submit</button>
       </div>
     </main>
     <footer class="footer">
